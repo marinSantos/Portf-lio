@@ -39,8 +39,14 @@ header {
 .logo {
     width: 100px;
     height: 100%;
-    background: url(imagens/Minha-logo.png) no-repeat bottom -30px right -20px;
-    background-size: 150%;
+    display:flex;
+      align-items: center;
+    justify-content: center;
+}
+.logo h1 {
+    width: 100px;
+    height: 100%;
+    font-size:1em;
 
 }
 
