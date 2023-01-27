@@ -283,62 +283,34 @@ const home = document.getElementById('home')
 const projetos = document.getElementById('projetos')
 const sobre = document.getElementById('sobre')
 
+const h = document.querySelector('#H')
+const p = document.querySelector('#P')
+const s = document.querySelector('#S')
+
 home.addEventListener('click', function () {
     home.classList.add('atual')
     projetos.classList.remove('atual')
     sobre.classList.remove('atual')
+
+    h.classList.remove('hidden')
+    p.classList.add('hidden')
+    s.classList.add('hidden')
 })
 projetos.addEventListener('click', function () {
     home.classList.remove('atual')
     projetos.classList.add('atual')
     sobre.classList.remove('atual')
+
+    h.classList.add('hidden')
+    p.classList.remove('hidden')
+    s.classList.add('hidden')
 })
 sobre.addEventListener('click', function () {
     home.classList.remove('atual')
     projetos.classList.remove('atual')
     sobre.classList.add('atual')
+
+    h.classList.add('hidden')
+    p.classList.add('hidden')
+    s.classList.remove('hidden')
 })
-
-
-//Data em tempo real
-
-const data = document.getElementById('data')
-
-data.innerText = new Date().getFullYear()
-
-
-//Ultilizando a biblioteca scrollReveal
-
-if (window.screen.width > 768) {
-    window.sr = ScrollReveal({ reset: true })
-    ScrollReveal({ duration: 1500 });
-    ScrollReveal().reveal('.caseR', { distance: '20px', origin: 'right' });
-    ScrollReveal().reveal('.case', { distance: '20px', origin: 'left' });
-    ScrollReveal().reveal('.parte1', { distance: '20px', origin: 'left' });
-    ScrollReveal().reveal('.parte2', { distance: '20px', origin: 'top' });
-    ScrollReveal().reveal('.p1', { distance: '20px', origin: 'bottom' });
-    ScrollReveal().reveal('.p2', { distance: '20px', origin: 'left' });
-    ScrollReveal().reveal('.imgs', { distance: '20px', origin: 'right' });
-    ScrollReveal().reveal('.tecs', { distance: '20px', origin: 'right' });
-} else {
-    window.sr = ScrollReveal({ reset: true })
-    ScrollReveal({ duration: 1500 });
-    ScrollReveal().reveal('.caseR', { scale: 1 });
-    ScrollReveal().reveal('.case', { scale: 1 });
-    ScrollReveal().reveal('.parte1', { scale: 1 });
-    ScrollReveal().reveal('.parte2', { scale: 1 });
-    ScrollReveal().reveal('.p1', { scale: 1 });
-    ScrollReveal().reveal('.p2', { scale: 1 });
-    ScrollReveal().reveal('.imgs', { scale: 1 });
-    ScrollReveal().reveal('.tecs', { scale: 1 });
-}
-
-
-
-
-
-
-
-
-
-
