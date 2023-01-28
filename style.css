@@ -114,15 +114,15 @@ main {
 }
 
 main .perfilImg {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     position: static;
     margin-left: 100px;
 }
 
 main .perfilImg img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 200px;
     border: #272333 solid 3px;
 }
