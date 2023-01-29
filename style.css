@@ -88,7 +88,7 @@ nav a {
 }
 
 .atual {
-  border: solid #8E69F4 3px !important;
+  border: solid #8E69F4 2px !important;
 }
 
 main {
@@ -161,6 +161,7 @@ video {
   height: 100%;
   border-radius: 10px;
   cursor: pointer;
+  border: solid #8E69F4 3px !important;
 }
 
 .tecs {
@@ -320,6 +321,7 @@ strong {
   border-radius: 10px;
   transition: all 0.6s;
   cursor: pointer;
+  border: solid #8E69F4 3px;
 }
 
 .video img:hover {
@@ -345,6 +347,7 @@ strong {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .p2 {
@@ -357,12 +360,26 @@ strong {
   padding-top: 110px;
 }
 
+.imgPerfil {
+  width: 125px;
+  height: 125px;
+}
+
+.imgPerfil img {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  position: absolute;
+  top: 16%;
+  border: solid #8E69F4 4px;
+}
+
 .detalhes {
-  margin-top: 60px;
+  margin-top: 120px;
   max-width: 800px;
   border: solid #8E69F4 3px;
   border-radius: 10px;
-  padding: 60px;
+  padding: 0px 60px 60px 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -598,13 +615,13 @@ p {
     font-size: 1.1em;
   }
   .detalhes {
-    margin-top: 40px;
+    margin-top: 0px;
     width: 100%;
     border-radius: 10px;
     padding: 20px;
   }
   .detalhes p {
-    padding-top: 20px;
+    padding-top: 0px;
     line-height: 20px;
     text-indent: 0px;
     text-align: left;
@@ -641,7 +658,7 @@ p {
   }
   nav a {
     width: 60px;
-    height: 25px;
+    height: 32px;
     font-size: 13px;
   }
   /* Home */
@@ -653,6 +670,8 @@ p {
     flex-direction: column;
     align-items: center;
   }
+
+
   .description p {
     font-size: 1em;
   }
@@ -661,6 +680,7 @@ p {
   }
   .description {
     width: 90%;
+    height: 200px;
   }
   .case {
     flex-direction: column;
@@ -718,6 +738,15 @@ p {
     line-height: 20px;
     text-indent: 0px;
     text-align: left;
+  }
+  .imgPerfil {
+    position: static;
+    margin-bottom: 10px;
+  
+  }
+  .imgPerfil img {
+    position: static;
+  
   }
   .logo2 {
     display: none;
