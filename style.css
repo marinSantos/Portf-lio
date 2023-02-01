@@ -218,7 +218,10 @@ span {
   flex-direction: column;
   align-items: center;
 }
-
+.description {
+  padding: 5px 20px;
+  
+}
 .description p {
   font-size: 1.2em;
 }
