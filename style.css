@@ -164,6 +164,7 @@ video {
   border: solid #8E69F4 3px !important;
 }
 
+
 .tecs {
   display: flex;
   flex-direction: column;
@@ -218,15 +219,19 @@ span {
   flex-direction: column;
   align-items: center;
 }
+
 .description {
   padding: 5px 20px;
   
 }
+
 .description p {
   font-size: 1.2em;
+ 
 }
 
 .description a {
+  
   color: #8E69F4;
   text-decoration: none;
   font-size: 1.2em;
@@ -281,9 +286,6 @@ strong {
   transition: all 0.6s;
 }
 
-.video video:hover {
-  width: 76%;
-}
 
 .case .description {
   width: 50%;
@@ -327,8 +329,14 @@ strong {
   border: solid #8E69F4 3px;
 }
 
-.video img:hover {
-  width: 76%;
+.video:hover:not(:hover){
+  opacity: 0.3;
+}
+.video video:hover{
+  scale:1.1;
+}
+.video img:hover{
+  scale:1.1;
 }
 
 .sobre {
