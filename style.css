@@ -90,12 +90,11 @@ header {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
-
-.logoh1 h1 {
   font-size: 2em;
   color: #ffffff;
 }
+
+
 
 nav {
   display: flex;
@@ -103,7 +102,7 @@ nav {
   column-gap: 5px;
 }
 
-nav a {
+header nav a {
   background-color: #353535;
   width: 80px;
   height: 35px;
@@ -219,7 +218,6 @@ h3 {
 .avatar {
   width: 300px;
   height: 300px;
-  cursor: pointer;
 }
 
 .avatar img {
@@ -233,7 +231,6 @@ video {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  cursor: pointer;
   border: solid #8E69F4 3px !important;
 }
 
@@ -493,7 +490,7 @@ strong {
   overflow: hidden;
   border-radius: 10px;
   transition: all .6s;
-  cursor: pointer;
+
 }
 
 .slider:hover {
@@ -559,9 +556,7 @@ footer {
   align-items: center;
 }
 
-.contato img:hover {
-  background-color: #03FCEF;
-}
+
 
 .contato img {
   background-color: #8E69F4;
@@ -718,6 +713,18 @@ p {
     scale: 1.4;
   }
 
+  .video img {
+    scale: 1.4;
+  }
+
+  .video video:hover {
+    scale: 1.5;
+  }
+
+  .video img:hover {
+    scale: 1.5;
+  }
+
 
 
   /*Sobre*/
@@ -762,6 +769,18 @@ p {
     scale: 1.0;
   }
 
+  .video img {
+    scale: 1.0;
+  }
+
+  .video video:hover {
+    scale: 1.1;
+  }
+
+  .video img:hover {
+    scale: 1.1;
+  }
+
   .parte1 {
     row-gap: 60px;
   }
@@ -783,7 +802,7 @@ p {
     height: 100%;
   }
 
-  nav a {
+  header nav a {
     width: 60px;
     height: 32px;
     font-size: 13px;
