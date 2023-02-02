@@ -1,3 +1,7 @@
+
+
+
+
 //Slider e slider automatico
 
 const l0 = document.getElementById('item0')
@@ -156,8 +160,6 @@ l7.addEventListener('click', function () {
 })
 
 
-
-
 function carrossel() {
     pos++
 
@@ -277,26 +279,25 @@ function typeWriter(nome) {
 typeWriter(fName)
 
 
-//Alternar opções do menu
+//Alternar cor de borda do menu de navegação
+
+
 
 const home = document.getElementById('home')
 const projetos = document.getElementById('projetos')
 const sobre = document.getElementById('sobre')
 
 
-
 home.addEventListener('click', function () {
     home.classList.add('atual')
+    window.scroll(0,0)
     projetos.classList.remove('atual')
     sobre.classList.remove('atual')
-
-
 })
 projetos.addEventListener('click', function () {
     home.classList.remove('atual')
     projetos.classList.add('atual')
     sobre.classList.remove('atual')
-
 })
 sobre.addEventListener('click', function () {
     home.classList.remove('atual')
@@ -313,5 +314,15 @@ ScrollReveal({ reset: true,distance: '15px' })
     ScrollReveal().reveal('.detalhes', { delay: 200, duration: 1500 });
     ScrollReveal().reveal('.tecs', { delay: 200, duration: 1500 });
     ScrollReveal().reveal('.slider', { delay: 200, duration: 1500 });
+
+
+
+
+
+
+
+
+
+
 
 
