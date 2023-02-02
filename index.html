@@ -15,9 +15,7 @@
     <body>
         <header>
             <div class="logo">
-                <div class="logoh1">
-                    <h1>Logo</h1>
-                </div>
+                <h1 class="logoh1">Logo</h1>
             </div>
             <nav>
                 <a id="home" class="atual" href="#H">Home</a>
@@ -25,19 +23,20 @@
                 <a id="sobre" href="#S">About</a>
             </nav>
         </header>
-        <div class="home" id="H">
-            
+        <main>
+            <section class="home" id="H">
 
-                <section class="parte1">
-                    <div class="apresentaçao">
+
+                <article class="parte1">
+                    <section class="apresentaçao">
                         <h2>Oi, eu sou</h2>
                         <h1 class="meu-nome">Lucas Marin</h1>
                         <h2>Desenvolvedor full-stack</h2>
-                    </div>
+                    </section>
 
-                    <div class="coments">
+                    <section class="coments">
                         <h3>Apresentação</h3>
-                        <div class="coment">
+                        <article class="coment">
                             <p>Bem-vindo"a" ao
                                 meu
                                 portfólio, nele você encontrará alguns dos meus projetos desenvolvidos até o momento, além
@@ -47,15 +46,15 @@
                                 me ajudará aprimorar ainda mais neste amplo e complexo universo da technologia, o céu não é
                                 o limite ! &#x1F680&#x1F680
                             </p>
-                        </div>
-                    </div>
-                </section>
-                <section class="parte2">
+                        </article>
+                    </section>
+                </article>
+                <article class="parte2">
                     <a class="cv" href="Curriculum.pdf" download>Baixar CV</a>
-                    <div class="avatar">
+                    <figure class="avatar">
                         <img title="Avatar criado com Inteligência artificial" src="imagens/avatar.webp" alt="">
-                    </div>
-                    <div class="contato">
+                    </figure>
+                    <nav class="contato">
                         <a target="_blank"
                             href="https://api.whatsapp.com/send/?phone=55011976047647&text&type=phone_number&app_absent=0"><img
                                 src="imagens/iconmonstr-whatsapp-1-240.png" alt=""></a>
@@ -65,240 +64,244 @@
                                 src="imagens/iconmonstr-instagram-11-240.png" alt=""></a>
                         <a target="_blank" href="https://github.com/marinSantos?tab=repositories"><img
                                 src="imagens/iconmonstr-github-1-240.png" alt=""></a>
+                    </nav>
+
+                </article>
+
+
+            </section>
+            <section id="P" class="projetos">
+                <div class="title paralax">
+                    <h1>Projects</h1>
+                </div>
+
+                <article class="case">
+                    <div class="video"><video src="videos/prlx.mp4" autoplay controls loop></video></div>
+                    <figcaption class="description">
+                        <h2>Site com efeito paralax</h2>
+                        <p>Página com efeito paralax,responsiva e desenvolvida com Html5 e Css3.</p><a target="_blank"
+                            href="https://marinsantos.github.io/paralax/"> <strong>Preview <img src="imagens/flecha.png"
+                                    alt=""></strong>
+
+                        </a>
+                    </figcaption>
+                </article>
+                <div class="caseR">
+
+                    <figcaption class="description">
+                        <h2>Landing-page Filo</h2>
+                        <p>Landing page da empresa Filo, com efeitos de hover, responsiva, troca de imagens de fundo de
+                            acordo
+                            com o tamanho da tela, mensagem de erro ao digitar um email inválido, desenvolvida com Html5,
+                            Css3
+                            e JavaScript.</p><a target="_blank" href="https://marinsantos.github.io/Landng-Page-2/">
+                            <strong>Preview <img src="imagens/flecha.png" alt=""></strong>
+
+                        </a>
+                    </figcaption>
+                    <div class="video"><video src="videos/Filo.mp4" autoplay controls loop></video></div>
+                </div>
+                <div class="gradient">
+                    <div class="case ">
+                        <div class="video"><video src="videos/Snap.mp4" autoplay controls loop></video></div>
+                        <figcaption class="description">
+                            <h2>Landing Page Snap</h2>
+                            <p>Landing page da empresa Snap,com efeitos de hover, responsiva, troca de imagens de acordo com
+                                o
+                                tamanho da tela, abertura de menus verticais, menu hanburguer horizontal e desenvolvida com
+                                Html5,
+                                Css3 e JavaScript.</p><a target="_blank" href="https://marinsantos.github.io/Landng-Page/">
+                                <strong>Preview <img src="imagens/flecha.png" alt=""> </strong>
+
+                            </a>
+                        </figcaption>
                     </div>
-                    
-                </section>
 
-            
+                    <article class="caseR ">
+
+                        <figcaption class="description">
+                            <h2>Página série The-Boys</h2>
+                            <p>Clone do y da série The boys na plataforma Prime Vídeo, imagem como plano de fundo inteiro,
+                                imagens animadas, menu interativo e desenvolvido com Html5,Css3 e JavaScrip.</p><a
+                                href="https://marinsantos.github.io/The-Boys/"><strong>Preview <img src="imagens/flecha.png"
+                                        alt=""> </strong>
+
+                            </a>
+                        </figcaption>
+                        <div class="video"><video src="videos/the-boys.mp4" autoplay controls loop></video></div>
+                    </article>
+                </div>
+            </section>
 
 
-
-
-
-        </div>
-        <div id="P" class="projetos  ">
-            <div class="title paralax">
-                <h1>Projects</h1>
-            </div>
-
-            <div class="case">
-                <div class="video"><video src="videos/prlx.mp4" autoplay controls loop></video></div>
-                <div class="description">
-                    <h2>Site com efeito paralax</h2>
-                    <p>Página com efeito paralax,responsiva e desenvolvida com Html5 e Css3.</p><a target="_blank"
-                        href="https://marinsantos.github.io/paralax/"> <strong>Preview <img src="imagens/flecha.png"
+            <article class="case">
+                <div class="video"><video src="videos/space.mp4" autoplay controls loop></video></div>
+                <figcaption class="description">
+                    <h2>Turismo Espacial</h2>
+                    <p>Site temático responsivo, contendo tres exemplos de menus com scroll lateral manual, animações, menu
+                        hanburguer no mobile e desenvolvido com Html5, Css3,Sass e JavaScript.</p><a target="_blank"
+                        href="https://marinsantos.github.io/Space-tourism/"><strong>Preview <img src="imagens/flecha.png"
                                 alt=""></strong>
 
                     </a>
-                </div>
-            </div>
-            <div class="caseR">
+                </figcaption>
+            </article>
+            <article class="caseR">
 
-                <div class="description">
-                    <h2>Landing-page Filo</h2>
-                    <p>Landing page da empresa Filo, com efeitos de hover, responsiva, troca de imagens de fundo de acordo
-                        com o tamanho da tela, mensagem de erro ao digitar um email inválido, desenvolvida com Html5, Css3
-                        e JavaScript.</p><a target="_blank" href="https://marinsantos.github.io/Landng-Page-2/">
-                        <strong>Preview <img src="imagens/flecha.png" alt=""></strong>
+                <figcaption class="description">
+                    <h2>Calculadora</h2>
+                    <p>Calculadora simples desenvolvida com Html5,Css3 e JavaScrip.</p><a
+                        href="https://marinsantos.github.io/Calculadora/"><strong>Preview <img src="imagens/flecha.png"
+                                alt=""></strong>
 
                     </a>
-                </div>
-                <div class="video"><video src="videos/Filo.mp4" autoplay controls loop></video></div>
-            </div>
+                </figcaption>
+                <div class="video"><video src="videos/calculadora.mp4" autoplay controls loop></video></div>
+            </article>
             <div class="gradient">
-                <div class="case ">
-                    <div class="video"><video src="videos/Snap.mp4" autoplay controls loop></video></div>
-                    <div class="description">
-                        <h2>Landing Page Snap</h2>
-                        <p>Landing page da empresa Snap,com efeitos de hover, responsiva, troca de imagens de acordo com o
-                            tamanho da tela, abertura de menus verticais, menu hanburguer horizontal e desenvolvida com
+                <article class="case ">
+                    <div class="video"><video src="videos/Pk.mp4" autoplay controls loop></video></div>
+                    <figcaption class="description">
+                        <h2>Site alternativo buffet</h2>
+                        <p>Site responsivo, menu hanburguer, ferramentas que auxiliam a função de Dj e desenvolvido com
                             Html5,
-                            Css3 e JavaScript.</p><a target="_blank" href="https://marinsantos.github.io/Landng-Page/">
-                            <strong>Preview <img src="imagens/flecha.png" alt=""> </strong>
+                            Css3 e JavaScript.</p><a target="_blank" href="https://marinsantos.github.io/Pk-Guide/">
+                            <strong>Preview <img src="imagens/flecha.png" alt=""></strong>
 
                         </a>
-                    </div>
-                </div>
+                    </figcaption>
+                </article>
+                <article class="caseR">
 
-                <div class="caseR ">
-
-                    <div class="description">
-                        <h2>Página série The-Boys</h2>
-                        <p>Clone do y da série The boys na plataforma Prime Vídeo, imagem como plano de fundo inteiro,
-                            imagens animadas, menu interativo e desenvolvido com Html5,Css3 e JavaScrip.</p><a
-                            href="https://marinsantos.github.io/The-Boys/"><strong>Preview <img src="imagens/flecha.png"
-                                    alt=""> </strong>
+                    <figcaption class="description">
+                        <h2>Conversor de dados</h2>
+                        <p>Ferramenta que converte qualquyer tipo de dado para outro, ambos podendo ser de Byte até
+                            YottaByte,
+                            desenvolvido com JavaScript Html e Css.</p><a
+                            href="https://marinsantos.github.io/Conversor-de-Dados/"><strong>Preview <img
+                                    src="imagens/flecha.png" alt=""></strong>
 
                         </a>
-                    </div>
-                    <div class="video"><video src="videos/the-boys.mp4" autoplay controls loop></video></div>
-                </div>
+                    </figcaption>
+                    <div class="video"><video src="videos/conversor.mp4" autoplay controls loop></video></div>
+                </article>
             </div>
-        </div>
-
-
-        <div class="case">
-            <div class="video"><video src="videos/space.mp4" autoplay controls loop></video></div>
-            <div class="description">
-                <h2>Turismo Espacial</h2>
-                <p>Site temático responsivo, contendo tres exemplos de menus com scroll lateral manual, animações, menu
-                    hanburguer no mobile e desenvolvido com Html5, Css3,Sass e JavaScript.</p><a target="_blank"
-                    href="https://marinsantos.github.io/Space-tourism/"><strong>Preview <img src="imagens/flecha.png"
-                            alt=""></strong>
-
-                </a>
-            </div>
-        </div>
-        <div class="caseR">
-
-            <div class="description">
-                <h2>Calculadora</h2>
-                <p>Calculadora simples desenvolvida com Html5,Css3 e JavaScrip.</p><a
-                    href="https://marinsantos.github.io/Calculadora/"><strong>Preview <img src="imagens/flecha.png"
-                            alt=""></strong>
-
-                </a>
-            </div>
-            <div class="video"><video src="videos/calculadora.mp4" autoplay controls loop></video></div>
-        </div>
-        <div class="gradient">
-            <div class="case ">
-                <div class="video"><video src="videos/Pk.mp4" autoplay controls loop></video></div>
-                <div class="description">
-                    <h2>Site alternativo buffet</h2>
-                    <p>Site responsivo, menu hanburguer, ferramentas que auxiliam a função de Dj e desenvolvido com
-                        Html5,
-                        Css3 e JavaScript.</p><a target="_blank" href="https://marinsantos.github.io/Pk-Guide/">
+            <article class="case ">
+                <div class="video"><video src="videos/redes.mp4" autoplay controls loop></video></div>
+                <figcaption class="description">
+                    <h2>Redes sociais</h2>
+                    <p>Página contendo botões que nos levam a todas minhas redes socias.</p><a
+                        href="https://marinsantos.github.io/Redes_Sociais/">
                         <strong>Preview <img src="imagens/flecha.png" alt=""></strong>
 
                     </a>
-                </div>
-            </div>
-            <div class="caseR ">
+                </figcaption>
 
-                <div class="description">
-                    <h2>Conversor de dados</h2>
-                    <p>Ferramenta que converte qualquyer tipo de dado para outro, ambos podendo ser de Byte até
-                        YottaByte,
-                        desenvolvido com JavaScript Html e Css.</p><a
-                        href="https://marinsantos.github.io/Conversor-de-Dados/"><strong>Preview <img
-                                src="imagens/flecha.png" alt=""></strong>
+            </article>
+            <article class="caseR ">
+
+                <figcaption class="description">
+                    <h2>RPG mitologia nórdica</h2>
+                    <p>Lógica de um jogo de RPG, usando dos recursos nativos do browser como interface, desenvolvido com
+                        JavaScript.</p><a target="_blank" href="https://marinsantos.github.io/Jogo-RPG-/">
+                        <strong>Preview <img src="imagens/flecha.png" alt=""></strong>
 
                     </a>
-                </div>
-                <div class="video"><video src="videos/conversor.mp4" autoplay controls loop></video></div>
+                </figcaption>
+                <div class="video"><img src="imagens/rpg.jpg" autoplay controls loop></img></div>
+
+            </article>
+
             </div>
-        </div>
-        <div class="case ">
-            <div class="video"><video src="videos/redes.mp4" autoplay controls loop></video></div>
-            <div class="description">
-                <h2>Redes sociais</h2>
-                <p>Página contendo botões que nos levam a todas minhas redes socias.</p><a
-                    href="https://marinsantos.github.io/Redes_Sociais/">
-                    <strong>Preview <img src="imagens/flecha.png" alt=""></strong>
-
-                </a>
-            </div>
-
-        </div>
-        <div class="caseR ">
-
-            <div class="description">
-                <h2>RPG mitologia nórdica</h2>
-                <p>Lógica de um jogo de RPG, usando dos recursos nativos do browser como interface, desenvolvido com
-                    JavaScript.</p><a target="_blank" href="https://marinsantos.github.io/Jogo-RPG-/">
-                    <strong>Preview <img src="imagens/flecha.png" alt=""></strong>
-
-                </a>
-            </div>
-            <div class="video"><img src="imagens/rpg.jpg" autoplay controls loop></img></div>
-
-        </div>
-
-        </div>
-        <div id="S" class="sobre blackColor ">
-            <div class="p1 gradient">
-                <div class="title paralax">
-                    <h1>About</h1>
-                </div>
-
-                <div class="detalhes">
-                    <div class="imgPerfil"><img src="imagens/minha-foto.jpg" alt=""></div>
-                    <h3>Lucas Marin</h3>
-                    <h3>Desenvolvedor full-stack</h3>
-                    <p>Sou estudante de Desenvolvimento de Software e de Marketing digital. Curioso, crítico,
-                        autodidático e gosto de resolver problemas, são eles que me incentivam a melhorar. Meus principais
-                        conhecimentos vieram de cursos e documentações, atualmente estou cursando Analise e desenvolvimento
-                        de sistemas na Unopar, Desenvolvimento
-                        full-stack na OneBitCode, Marketing Digital na Usp e já fiz desenvolvimento Com Html5 e Css3 no
-                        canal
-                        Curso em
-                        Vídeo do Gustavo Guanabara. </p>
-
-                </div>
-            </div>
-
-
-            <div class="p2">
-                <h2>Achievements </h2>
-                <div class="slider">
-
-                    <div class="slides">
-                        <img src="imagens/Html5-certificate.jpg" class="primeiro" alt="">
-                        <img src="imagens/Css3-certificate.jpg" alt="">
-                        <img src="imagens/Css-Moderno-certificate.jpg" alt="">
-                        <img src="imagens/Js-Base-certificate.jpg" alt="">
-                        <img src="imagens/Js-Dom-certificate.jpg" alt="">
-                        <img src="imagens/Js-Moderno-certificate.jpg" alt="">
-                        <img src="imagens/hardware-certificate.png" alt="">
-                        <img src="imagens/tempo-certificate.png" alt="">
+            <section id="S" class="sobre ">
+                <section class="p1 gradient">
+                    <div class="title paralax">
+                        <h1>About</h1>
                     </div>
-                </div>
-                <div class="bals">
-                    <p class="manualBtn atual2" id="item0"></p>
-                    <p class="manualBtn" id="item1"></p>
-                    <p class="manualBtn" id="item2"></p>
-                    <p class="manualBtn" id="item3"></p>
-                    <p class="manualBtn" id="item4"></p>
-                    <p class="manualBtn" id="item5"></p>
-                    <p class="manualBtn" id="item6"></p>
-                    <p class="manualBtn" id="item7"></p>
-                </div>
-            </div>
-            <br><br>
-            <div class="tecs ">
-                <h2>Skils</h2>
-                <p><span>!</span> Passe o mouse por cima para obter informações <span>!</span></p>
-                <div class="imgs">
-                    <img src="imagens/html5-logo.png"
-                        title="HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML. HyTime é um padrão para a representação estruturada de hipermídia e conteúdo baseado em tempo.">
-                    <img class="adjust" src="imagens/css-logo.png"
-                        title="CSS é um mecanismo para adicionar estilos a uma página web, aplicado diretamente nas tags HTML ou ficar contido dentro das tags style. Também é possível, adicionar estilos adicionando um link para um arquivo CSS que contém os estilos.">
-                    <img src="imagens/Js-logo.png"
-                        title="JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.">
-                    <img src="imagens/Bootstrap-logo.svg"
-                        title="Bootstrap é um framework web com código-fonte aberto para desenvolvimento de componentes de interface e front-end para sites e aplicações web, usando HTML, CSS e JavaScript, baseado em modelos de design para a tipografia, melhorando a experiência do usuário em um site amigável e responsivo.">
-                    <img src="imagens/react-logo.png"
-                        title="O React é uma biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.">
 
-                </div>
-            </div>
+                    <article class="detalhes">
+                        <figure class="imgPerfil"><img src="imagens/minha-foto.jpg" alt=""></figure>
+                        <h3>Lucas Marin</h3>
+                        <h3>Desenvolvedor full-stack</h3>
+                        <p>Sou estudante de Desenvolvimento de Software e de Marketing digital. Curioso, crítico,
+                            autodidático e gosto de resolver problemas, são eles que me incentivam a melhorar. Meus
+                            principais
+                            conhecimentos vieram de cursos e documentações, atualmente estou cursando Analise e
+                            desenvolvimento
+                            de sistemas na Unopar, Desenvolvimento
+                            full-stack na OneBitCode, Marketing Digital na Usp e já fiz desenvolvimento Com Html5 e Css3 no
+                            canal
+                            Curso em
+                            Vídeo do Gustavo Guanabara. </p>
 
-        </div>
+                    </article>
+                </section>
+
+
+                <section class="p2">
+                    <h2>Achievements</h2>
+                    <article class="slider">
+
+                        <figure class="slides">
+                            <img src="imagens/Html5-certificate.jpg" class="primeiro" alt="">
+                            <img src="imagens/Css3-certificate.jpg" alt="">
+                            <img src="imagens/Css-Moderno-certificate.jpg" alt="">
+                            <img src="imagens/Js-Base-certificate.jpg" alt="">
+                            <img src="imagens/Js-Dom-certificate.jpg" alt="">
+                            <img src="imagens/Js-Moderno-certificate.jpg" alt="">
+                            <img src="imagens/hardware-certificate.png" alt="">
+                            <img src="imagens/tempo-certificate.png" alt="">
+                        </figure>
+                    </article>
+                    <nav class="bals">
+                        <p class="manualBtn atual2" id="item0"></p>
+                        <p class="manualBtn" id="item1"></p>
+                        <p class="manualBtn" id="item2"></p>
+                        <p class="manualBtn" id="item3"></p>
+                        <p class="manualBtn" id="item4"></p>
+                        <p class="manualBtn" id="item5"></p>
+                        <p class="manualBtn" id="item6"></p>
+                        <p class="manualBtn" id="item7"></p>
+                    </nav>
+                </section>
+                <br><br>
+                <section class="tecs">
+                    <h2>Skils</h2>
+                    <p><span>!</span> Passe o mouse por cima para obter informações <span>!</span></p>
+                    <figure class="imgs">
+                        <img src="imagens/html5-logo.png"
+                            title="HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML. HyTime é um padrão para a representação estruturada de hipermídia e conteúdo baseado em tempo.">
+                        <img class="adjust" src="imagens/css-logo.png"
+                            title="CSS é um mecanismo para adicionar estilos a uma página web, aplicado diretamente nas tags HTML ou ficar contido dentro das tags style. Também é possível, adicionar estilos adicionando um link para um arquivo CSS que contém os estilos.">
+                        <img src="imagens/Js-logo.png"
+                            title="JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.">
+                        <img src="imagens/Bootstrap-logo.svg"
+                            title="Bootstrap é um framework web com código-fonte aberto para desenvolvimento de componentes de interface e front-end para sites e aplicações web, usando HTML, CSS e JavaScript, baseado em modelos de design para a tipografia, melhorando a experiência do usuário em um site amigável e responsivo.">
+                        <img src="imagens/react-logo.png"
+                            title="O React é uma biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.">
+
+                    </figure>
+                </section>
+
+            </section>
+        </main>
+
         <footer>
-            <div class="contato">
-            <a target="_blank"
-                href="https://api.whatsapp.com/send/?phone=55011976047647&text&type=phone_number&app_absent=0"><img
-                    src="imagens/iconmonstr-whatsapp-1-240.png" alt=""></a>
-            <a target="_blank" href="https://www.linkedin.com/in/lucas-marin-ab22921b8/"><img
-                    src="imagens/iconmonstr-linkedin-1-240.png" alt=""></a>
-            <a target="_blank" href="https://www.instagram.com/maarin_lucas/"><img
-                    src="imagens/iconmonstr-instagram-11-240.png" alt=""></a>
-            <a target="_blank" href="https://github.com/marinSantos?tab=repositories"><img
-                    src="imagens/iconmonstr-github-1-240.png" alt=""></a>
-        </div> 
-        <div class="ano"><p>Copyright © 2023 Lucas Marin</p></div>
-    </footer>
+            <nav class="contato">
+                <a target="_blank"
+                    href="https://api.whatsapp.com/send/?phone=55011976047647&text&type=phone_number&app_absent=0"><img
+                        src="imagens/iconmonstr-whatsapp-1-240.png" alt=""></a>
+                <a target="_blank" href="https://www.linkedin.com/in/lucas-marin-ab22921b8/"><img
+                        src="imagens/iconmonstr-linkedin-1-240.png" alt=""></a>
+                <a target="_blank" href="https://www.instagram.com/maarin_lucas/"><img
+                        src="imagens/iconmonstr-instagram-11-240.png" alt=""></a>
+                <a target="_blank" href="https://github.com/marinSantos?tab=repositories"><img
+                        src="imagens/iconmonstr-github-1-240.png" alt=""></a>
+            </nav>
+            <time class="ano">
+                <p>Copyright © 2023 Lucas Marin</p>
+            </time>
+        </footer>
     </body>
 
     </html>
