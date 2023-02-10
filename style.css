@@ -1,19 +1,44 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
 
+#skillDescription{
+  height: 260px;
+  width: 100%;
+ display:flex;
+ align-items:center;
+ justify-content: center;
+ text-align: center;
+ padding: 20px 40px;
+ color: #ffffff;
+font-size: 1.3em;
+}
+
+
+
 .cv {
-  background-color: #353535;
   display: flex;
+
   align-items: center;
   justify-content: center;
   color: #ffffff;
   text-decoration: none;
+  column-gap: 7px;
+  padding: 10px;
   border-radius: 10px;
+  border: solid #ffffff 2px !important;
+  background-color: #353535;
+}
+.cv:hover{
+  border: solid #8E69F4 2px !important;
+}
+.cv span{
+  font-size: 1.1em;
   font-weight: 600;
-  padding: 10px 20px;
-  transition: all .5s;
-  border: #8E69F4 solid 2px;
-  margin-bottom: 10px;
+}
+.cv img{
+
+width: 30px;
+height: 30px;
 }
 
 
@@ -22,8 +47,7 @@
 .caseR,
 .detalhes,
 .slider,
-.tecs,
-.home {
+.home,.tecs {
   display: hidden;
 }
 
@@ -239,7 +263,7 @@ video {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 400px;
+
   color: #ffffff;
   font-weight: 500;
   padding: 40px;
@@ -251,7 +275,7 @@ span {
   font-size: 30px;
 }
 
-.imgs {
+.skills {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -260,14 +284,14 @@ span {
   column-gap: 60px;
 }
 
-.imgs img {
+.skills img {
   width: 55px;
   height: 55px;
   cursor: pointer;
   transition: all .6s;
 }
 
-.imgs img:hover {
+.skills img:hover {
   scale: 1.4;
 
 }
@@ -687,6 +711,9 @@ p {
 }
 
 @media (max-width: 768px) {
+  .atual{
+    border: solid white 1px !important;
+  }
   .caseR {
     height: 400px;
   }
@@ -700,7 +727,7 @@ p {
     font-size: 1.3em;
   }
 
-  .imgs {
+  .skills {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -765,6 +792,12 @@ p {
 }
 
 @media (max-width: 480px) {
+
+  #skillDescription{
+    height: 200px;
+   padding: 0px 0px;
+  font-size: 1.0em;
+  }
   video {
     scale: 1.0;
   }
@@ -955,7 +988,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 400px;
+
     color: #ffffff;
     font-weight: 500;
     padding: 40px;
@@ -966,7 +999,7 @@ p {
     font-size: 30px;
   }
 
-  .imgs {
+  .skills {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -975,7 +1008,7 @@ p {
     column-gap: 30px;
   }
 
-  .imgs img {
+  .skills img {
     width: 35px;
     height: 35px;
     cursor: pointer;
