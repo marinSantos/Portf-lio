@@ -247,11 +247,11 @@ function carrossel() {
     }
 
 
-        if (window.screen.width <= 451) {
-            imgs.style.transform = `translateX(${-pos * 300}px)`
-        } else {
-            imgs.style.transform = `translateX(${-pos * 450}px)`
-        }
+    if (window.screen.width <= 451) {
+        imgs.style.transform = `translateX(${-pos * 300}px)`
+    } else {
+        imgs.style.transform = `translateX(${-pos * 450}px)`
+    }
 
 }
 
@@ -283,36 +283,37 @@ typeWriter(fName)
 
 
 
+
+
+//conforme o scroll
+window.onscroll = function () { transparent() }
+
+function transparent() {
+
+    if (document.documentElement.scrollTop <= 700) {
+        home.classList.add('atual')
+        projetos.classList.remove('atual')
+        sobre.classList.remove('atual')
+    } else if (document.documentElement.scrollTop <= 6000 && document.documentElement.scrollTop > 700) {
+        home.classList.remove('atual')
+        projetos.classList.add('atual')
+        sobre.classList.remove('atual')
+    } else if (document.documentElement.scrollTop > 6000) {
+        home.classList.remove('atual')
+        projetos.classList.remove('atual')
+        sobre.classList.add('atual')
+    }
+}
+
+
+//conforme o click
 const home = document.getElementById('home')
-const h = document.getElementById('H')
-
 const projetos = document.getElementById('projetos')
-const p = document.getElementById('P')
-
 const sobre = document.getElementById('sobre')
-const s = document.getElementById('S')
-
-
-h.addEventListener('mouseenter',function(){
-    home.classList.add('atual')
-    projetos.classList.remove('atual')
-    sobre.classList.remove('atual')
-})
-p.addEventListener('mouseenter',function(){
-    home.classList.remove('atual')
-    projetos.classList.add('atual')
-    sobre.classList.remove('atual')
-})
-s.addEventListener('mouseenter',function(){
-    home.classList.remove('atual')
-    projetos.classList.remove('atual')
-    sobre.classList.add('atual')
-})
 
 
 home.addEventListener('click', function () {
     home.classList.add('atual')
-    window.scroll(0,0)
     projetos.classList.remove('atual')
     sobre.classList.remove('atual')
 })
@@ -327,17 +328,42 @@ sobre.addEventListener('click', function () {
     sobre.classList.add('atual')
 })
 
-//scrollView
-ScrollReveal({ reset: true,distance: '15px' })
 
-    ScrollReveal().reveal('.home', { delay: 200, duration: 1500 });
-    ScrollReveal().reveal('.case', { delay: 200, origin: 'left', duration: 1500 });
-    ScrollReveal().reveal('.caseR', { delay: 200, origin: 'right', duration: 1500 });
-    ScrollReveal().reveal('.detalhes', { delay: 200, duration: 1500 });
-    ScrollReveal().reveal('.tecs', { delay: 200, duration: 1500 });
-    ScrollReveal().reveal('.slider', { delay: 200, duration: 1500 });
+// conforme o reiniciamento da página 
 
 
+
+
+// descrição das tecnologias
+
+const skillDesc = document.getElementById('skillDescription')
+
+
+
+function htmlDesc() {
+    skillDesc.innerText = 'HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML. HyTime é um padrão para a representação estruturada de hipermídia e conteúdo baseado em tempo.'
+}
+
+
+function cssDesc() {
+    skillDesc.innerText = 'CSS é um mecanismo para adicionar estilos a uma página web, aplicado diretamente nas tags HTML ou ficar contido dentro das tags style. Também é possível, adicionar estilos adicionando um link para um arquivo CSS que contém os estilos.'
+}
+
+function jsDesc() {
+    skillDesc.innerText = 'JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.'
+}
+
+function bootsDesc() {
+    skillDesc.innerText = 'Bootstrap é um framework web com código-fonte aberto para desenvolvimento de componentes de interface e front-end para sites e aplicações web, usando HTML, CSS e JavaScript, baseado em modelos de design para a tipografia, melhorando a experiência do usuário em um site amigável e responsivo.'
+}
+
+function reactDesc() {
+    skillDesc.innerText = 'O React é uma biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.'
+}
+
+function leave() {
+    skillDesc.innerText = 'Passe o mouse por cima para obter informações da ferramenta...'
+}
 
 
 
