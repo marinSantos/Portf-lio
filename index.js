@@ -247,11 +247,11 @@ function carrossel() {
     }
 
 
-    if (window.screen.width <= 451) {
-        imgs.style.transform = `translateX(${-pos * 300}px)`
-    } else {
-        imgs.style.transform = `translateX(${-pos * 450}px)`
-    }
+        if (window.screen.width <= 451) {
+            imgs.style.transform = `translateX(${-pos * 300}px)`
+        } else {
+            imgs.style.transform = `translateX(${-pos * 450}px)`
+        }
 
 }
 
@@ -284,8 +284,30 @@ typeWriter(fName)
 
 
 const home = document.getElementById('home')
+const h = document.getElementById('H')
+
 const projetos = document.getElementById('projetos')
+const p = document.getElementById('P')
+
 const sobre = document.getElementById('sobre')
+const s = document.getElementById('S')
+
+
+h.addEventListener('mouseenter',function(){
+    home.classList.add('atual')
+    projetos.classList.remove('atual')
+    sobre.classList.remove('atual')
+})
+p.addEventListener('mouseenter',function(){
+    home.classList.remove('atual')
+    projetos.classList.add('atual')
+    sobre.classList.remove('atual')
+})
+s.addEventListener('mouseenter',function(){
+    home.classList.remove('atual')
+    projetos.classList.remove('atual')
+    sobre.classList.add('atual')
+})
 
 
 home.addEventListener('click', function () {
@@ -314,12 +336,6 @@ ScrollReveal({ reset: true,distance: '15px' })
     ScrollReveal().reveal('.detalhes', { delay: 200, duration: 1500 });
     ScrollReveal().reveal('.tecs', { delay: 200, duration: 1500 });
     ScrollReveal().reveal('.slider', { delay: 200, duration: 1500 });
-
-
-
-
-
-
 
 
 
