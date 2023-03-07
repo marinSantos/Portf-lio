@@ -422,13 +422,7 @@ strong {
 }
 
 
-.video video:hover {
-  scale: 1.1;
-}
 
-.video img:hover {
-  scale: 1.1;
-}
 
 
 .sobre {
@@ -736,21 +730,7 @@ p {
     column-gap: 30px;
   }
 
-  video {
-    scale: 1.4;
-  }
-
-  .video img {
-    scale: 1.4;
-  }
-
-  .video video:hover {
-    scale: 1.5;
-  }
-
-  .video img:hover {
-    scale: 1.5;
-  }
+  
 
 
 
@@ -798,21 +778,9 @@ p {
    padding: 0px 0px;
   font-size: 1.0em;
   }
-  video {
-    scale: 1.0;
-  }
+ 
 
-  .video img {
-    scale: 1.0;
-  }
-
-  .video video:hover {
-    scale: 1.1;
-  }
-
-  .video img:hover {
-    scale: 1.1;
-  }
+  
 
   .parte1 {
     row-gap: 60px;
