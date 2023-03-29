@@ -1,16 +1,16 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
 
-#skillDescription{
+#skillDescription {
   height: 260px;
   width: 100%;
- display:flex;
- align-items:center;
- justify-content: center;
- text-align: center;
- padding: 20px 40px;
- color: #ffffff;
-font-size: 1.3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 40px;
+  color: #ffffff;
+  font-size: 1.3em;
 }
 
 
@@ -28,26 +28,30 @@ font-size: 1.3em;
   border: solid #ffffff 2px !important;
   background-color: #353535;
 }
-.cv:hover{
+
+.cv:hover {
   border: solid #8E69F4 2px !important;
 }
-.cv span{
+
+.cv span {
   font-size: 1.1em;
   font-weight: 600;
 }
-.cv img{
 
-width: 30px;
-height: 30px;
+.cv img {
+
+  width: 30px;
+  height: 30px;
 }
 
 
 
 .case,
 .caseR,
-.detalhes,
+.sobreMim,
 .slider,
-.home,.tecs {
+.home,
+.tecs {
   display: hidden;
 }
 
@@ -57,8 +61,16 @@ height: 30px;
   height: 300px;
 }
 
-.gradient {
+.gradient2 {
   background-color: #272333 !important;
+}
+.gradient{
+  background-color: #211e29 !important;
+}
+
+.gradient2,
+.gradient {
+  padding: 0 10px;
 }
 
 
@@ -255,7 +267,6 @@ video {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  border: solid #8E69F4 3px !important;
 }
 
 
@@ -366,13 +377,13 @@ strong {
   padding: 50px;
 }
 
-.case .video {
+.case .projeto {
   width: 50%;
   display: flex;
   align-items: center;
 }
 
-.video video {
+.projeto video {
   height: 100%;
   width: 72%;
   transition: all 0.6s;
@@ -390,13 +401,14 @@ strong {
 
 .caseR {
   display: flex;
+  flex-direction: row-reverse;
   width: 100%;
   height: 500px;
   align-items: center;
   padding: 50px;
 }
 
-.caseR .video {
+.caseR .projeto {
   width: 50%;
   display: flex;
   align-items: center;
@@ -412,22 +424,11 @@ strong {
   row-gap: 40px;
 }
 
-.video img {
-  height: 100%;
-  width: 72%;
-  border-radius: 10px;
-  transition: all 0.6s;
-  cursor: pointer;
-  border: solid #8E69F4 3px;
-}
-
-
-
 
 
 .sobre {
   color: #ffffff;
-  padding: 100px 0px 50px 0px;
+  padding: 0px 0px 50px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -467,12 +468,12 @@ strong {
   width: 125px;
   height: 125px;
   border-radius: 50%;
-  position: absolute;
-  bottom: 85%;
+  position: relative;
+  bottom: 77px;
   border: solid #8E69F4 4px;
 }
 
-.detalhes {
+.sobreMim {
   margin: 150px 0;
   max-width: 800px;
   border: solid #8E69F4 3px;
@@ -483,23 +484,13 @@ strong {
   align-items: center;
 }
 
-.detalhes p {
+.sobreMim p {
   padding-top: 20px;
   line-height: 30px;
   text-indent: 30px;
   text-align: justify;
 }
 
-.logo2 {
-  width: 100px;
-  height: 110px;
-  margin-bottom: 20px;
-}
-
-.logo2 img {
-  width: 100%;
-  height: 100%;
-}
 
 .slider {
   width: 450px;
@@ -705,9 +696,10 @@ p {
 }
 
 @media (max-width: 768px) {
-  .atual{
+  .atual {
     border: solid white 1px !important;
   }
+
   .caseR {
     height: 400px;
   }
@@ -730,7 +722,7 @@ p {
     column-gap: 30px;
   }
 
-  
+
 
 
 
@@ -743,14 +735,13 @@ p {
     font-size: 1.1em;
   }
 
-  .detalhes {
-    margin: 100px 0;
-    width: 100%;
+  .sobreMim {
+    width: 90%;
     border-radius: 10px;
-    padding: 20px;
+    padding: 25px;
   }
 
-  .detalhes p {
+  .sobreMim p {
     padding-top: 0px;
     line-height: 20px;
     text-indent: 0px;
@@ -773,14 +764,14 @@ p {
 
 @media (max-width: 480px) {
 
-  #skillDescription{
+  #skillDescription {
     height: 200px;
-   padding: 0px 0px;
-  font-size: 1.0em;
+    padding: 0px 0px;
+    font-size: 1.0em;
   }
- 
 
-  
+
+
 
   .parte1 {
     row-gap: 60px;
@@ -821,7 +812,7 @@ p {
 
 
   .description p {
-    font-size: 1em;
+    font-size: .9em;
   }
 
   .description a {
@@ -831,96 +822,68 @@ p {
   .description {
     width: 90%;
     height: 200px;
+    text-align: center;
   }
 
-  .case {
+
+  .case,
+  .caseR {
     flex-direction: column;
     width: 100%;
-    height: 500px;
-    padding: 20px 20px 20px 20px;
+    height: 550px;
+    padding: 20px;
   }
 
-  .caseR {
-    flex-direction: column-reverse;
-    width: 100%;
-    height: 500px;
-    padding: 20px 20px 20px 20px;
-  }
 
-  .case .video {
+  .case .projeto,
+  .caseR .projeto {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .case .video video {
-    width: 80%;
+  .projeto video {
+    width: 66%;
   }
 
-  .caseR .video video {
-    width: 80%;
-  }
 
-  .caseR .video {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .case .description {
-    width: 100%;
-    height: 320px;
-  }
-
+  .case .description,
   .caseR .description {
     width: 100%;
     height: 320px;
   }
 
-  .video img {
-    width: 80%;
-  }
 
   /*Sobre*/
   .sobre h3 {
     font-size: 1.1em;
   }
 
-  .detalhes {
-    margin: 40px 0;
+  .sobreMim {
+    height: 400px;
     width: 100%;
-    border-radius: 10px;
-    padding: 20px;
+    border: none;
+
   }
 
-  .detalhes p {
-    padding-top: 20px;
+  .sobreMim p {
+    padding-top: 10px;
     line-height: 20px;
     text-indent: 0px;
-    text-align: left;
+    font-size: 13px;
+    text-align: center;
   }
 
-  .imgPerfil {
-    position: static;
-    margin-bottom: 10px;
 
-  }
 
   .imgPerfil img {
-    position: static;
+    bottom: 50px;
+    position: relative;
 
   }
 
-  .logo2 {
-    display: none;
-  }
 
-  .logo2 img {
-    width: 100%;
-    height: 100%;
-  }
 
   .bals {
     display: flex;
