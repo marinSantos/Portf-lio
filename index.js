@@ -14,7 +14,7 @@ function typeWriter(nome) {
                 meuNome.innerHTML += letra;
             }, 160 * index)
         })
-    }, 300)
+    }, 600)
 
 }
 
@@ -22,9 +22,6 @@ typeWriter(fName)
 
 
 //Alternar cor de borda do menu de navegação
-
-
-
 
 
 //conforme o scroll
