@@ -6,4 +6,3 @@ ScrollReveal().reveal('.case', { delay: 200, origin: 'left', duration: 1500 });
 ScrollReveal().reveal('.caseR', { delay: 200, origin: 'right', duration: 1500 });
 ScrollReveal().reveal('.detalhes', { delay: 200, duration: 1500 });
 ScrollReveal().reveal('.tecs', { delay: 200, duration: 1500 });
-ScrollReveal().reveal('.slider', { delay: 200, duration: 1500 });
