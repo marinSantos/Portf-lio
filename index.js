@@ -361,13 +361,9 @@
         skillDesc.innerText = 'O React é uma biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.'
     }
 
-
-    function gitDesc(){
-        skillDesc.innerText = 'Git ₍ₒᵤ em inglês britânico₎ é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo.'
-    }
-    /* function sassDesc(){
+     function sassDesc(){
         skillDesc.innerText = 'O SASS é uma linguagem de extensão do CSS, a sigla significa “Syntactically Awesome Style Sheets” traduzindo ao pé da letra, folhas de estilo com uma sintaxe incrível. A sua ideia é adicionar recursos especiais como variáveis, mixins, funções e operações e outras opções variadas que iremos comentar. O SASS tem como objetivo tornar o processo de desenvolvimento mais simples e eficiente.'
-    } */
+    } 
 
     function leave() {
         skillDesc.innerText = 'Passe o mouse por cima para obter informações da ferramenta...'
