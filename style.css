@@ -17,7 +17,6 @@
 
 .cv {
   display: flex;
-
   align-items: center;
   justify-content: center;
   color: #ffffff;
@@ -30,7 +29,7 @@
 }
 
 .cv:hover {
-  border: solid #8E69F4 2px !important;
+  border: solid #0085D5 2px !important;
 }
 
 .cv span {
@@ -103,7 +102,7 @@ body {
 }
 
 header {
-  background-color: #0C0B0F;
+  background-color: #121312;
   display: flex;
   padding: 0 60px;
   align-items: center;
@@ -154,7 +153,7 @@ header nav a {
 
 
 .atual {
-  border: solid #8E69F4 2px !important;
+  border: solid #0085D5 2px !important;
 }
 
 .home {
@@ -217,7 +216,7 @@ header nav a {
 }
 
 h1 {
-  color: #8E69F4;
+  color: #0085D5;
   font-size: 4.1em;
 }
 
@@ -232,7 +231,7 @@ h3 {
 }
 
 .coment {
-  border: #8E69F4 solid 1px;
+  border: #0085D5 solid 1px;
   padding: 20px;
   width: 600px;
   border-radius: 10px;
@@ -252,8 +251,10 @@ h3 {
 }
 
 .avatar {
-  width: 300px;
-  height: 300px;
+  max-width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background-color: #0085D5;
 }
 
 .avatar img {
@@ -266,7 +267,6 @@ h3 {
 video {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
 }
 
 
@@ -333,7 +333,7 @@ span {
 
 .description a {
 
-  color: #8E69F4;
+  color: #0085D5;
   text-decoration: none;
   font-size: 1.2em;
   font-weight: bold;
@@ -352,7 +352,7 @@ span {
 strong img {
   width: 20px;
   height: 20px;
-  background-color: #8E69F4;
+  background-color: #0085D5;
   border-radius: 20px;
 }
 
@@ -456,11 +456,13 @@ strong {
   align-items: center;
   justify-content: center;
   row-gap: 20px;
+
 }
 
 .imgPerfil {
   width: 125px;
   height: 125px;
+
 }
 
 .imgPerfil img {
@@ -469,13 +471,13 @@ strong {
   border-radius: 50%;
   position: relative;
   bottom: 77px;
-  border: solid #8E69F4 4px;
+  border: solid #0085D5 4px;
 }
 
 .sobreMim {
   margin: 150px 0;
   max-width: 800px;
-  border: solid #8E69F4 3px;
+  border: solid #0085D5 3px;
   border-radius: 10px;
   padding: 0px 60px 60px 60px;
   display: flex;
@@ -546,7 +548,7 @@ strong {
 }
 
 footer {
-  background-color: #0c0b0fcb;
+  background-color: #121312cb;
   height: 100px;
   display: flex;
   flex-direction: column;
@@ -567,7 +569,7 @@ footer {
 
 
 .contato img {
-  background-color: #8E69F4;
+  background-color: #0085D5;
   width: 30px;
   height: 30px;
   padding: 5px;
@@ -777,7 +779,7 @@ p {
   }
 
   header {
-    background-color: #0C0B0F;
+    background-color: #121312;
     display: flex;
     padding: 0 20px;
     align-items: center;
