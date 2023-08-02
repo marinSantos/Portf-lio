@@ -12,9 +12,9 @@ function typeWriter(nome) {
         meuNomeF.forEach((letra, index) => {
             setTimeout(function () {
                 meuNome.innerHTML += letra;
-            }, 160 * index)
+            }, 150 * index)
         })
-    }, 1000)
+    }, 500)
 
 }
 
@@ -33,11 +33,11 @@ function transparent() {
         home.classList.add('atual')
         projetos.classList.remove('atual')
         sobre.classList.remove('atual')
-    } else if (document.documentElement.scrollTop <= 6000 && document.documentElement.scrollTop > 700) {
+    } else if (document.documentElement.scrollTop <= 3700 && document.documentElement.scrollTop > 700) {
         home.classList.remove('atual')
         projetos.classList.add('atual')
         sobre.classList.remove('atual')
-    } else if (document.documentElement.scrollTop > 6000) {
+    } else if (document.documentElement.scrollTop > 3700) {
         home.classList.remove('atual')
         projetos.classList.remove('atual')
         sobre.classList.add('atual')
