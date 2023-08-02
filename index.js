@@ -14,7 +14,7 @@ function typeWriter(nome) {
                 meuNome.innerHTML += letra;
             }, 160 * index)
         })
-    }, 600)
+    }, 1000)
 
 }
 
